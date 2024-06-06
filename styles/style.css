@@ -98,10 +98,14 @@ footer{
     justify-content: center;
 }
 
-footer .redes a img{
-    width: 27px;
-    height: 27px;
-    padding: 0px 5px;
+.iconosredes {
+    font-size: 28px;
+    padding: 0px 4px;
+}
+
+.redes a{
+    color:#004E63;
+    text-decoration: none;
 }
 
 footer ul{
@@ -413,21 +417,24 @@ form label{
     margin-left: 0;
     background-color: #004E63;
     padding: 1.5vh 1vw;
+    margin-bottom: 3vh;
 }
 
-#fichaDeContacto img{
-    width: 3vw;
-    height: 2.7vh;
-    padding-right: 1vw;
-    padding-top: 0.3vh;
-    padding-bottom: 1.2vh;
-    display: inline;
+#whatsapp, #mail, #ubicacion{
+    display: flex;
+    align-items: flex-end;
+}
+
+.iconoscontacto{
+    font-size: 2.4vw;
+    color: white;
+    padding-right: 0.6vw;
 }
 
 #fichaDeContacto p{
     display: inline;
     font-family: "Domine";
-    font-size: 2.6vh;
+    font-size: 2.3vh;
     color: white;
 }
 
@@ -486,6 +493,11 @@ form label{
     }
 
     /* Exclusivo Contacto */
+    #whatsapp, #mail, #ubicacion{
+        display: flex;
+        align-items: flex-start;
+    }
+
     .pcontact{
         font-size: 2vh;
         padding-top: 1.8vh;
@@ -804,6 +816,11 @@ form label{
         height: 18vh;
         padding: 1vh 2.3vw;
     }
+
+    /* Exclusivo Contacto */
+    .iconoscontacto{
+        font-size: 3.2vw;
+    }
 }
 
 @media (max-width:480px) {
@@ -966,8 +983,8 @@ form label{
         text-align: center;
     }
 
-    #fichaDeContacto img{
-        width: 6vw;
+    .iconoscontacto{
+        font-size: 4vw;
     }
 
     #fichaDeContacto p{

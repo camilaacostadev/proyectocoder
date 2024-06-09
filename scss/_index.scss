@@ -1,0 +1,15 @@
+.mindex{
+    background-image: url(../assets/fotos_index/foto_index.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .fika{
+        font-family: $titlesFont;
+        font-weight: bold;
+        font-size: 25rem;
+        color: $mainColor;
+        text-shadow: 0.5px 0.5px 20px white;
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+        text-align: center;
+    }
+}

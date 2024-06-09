@@ -1,0 +1,111 @@
+// Buenas Prácticas
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+// header
+header{
+    background-color: white;
+    @include tamaños(auto, 8rem);
+    border: $bordeHYF;
+    @include flexb(row, space-between, center);
+    a{
+        img{
+            width:12.5rem;
+        }
+    }
+    nav{
+        margin-right: 1rem;
+        .navbar{
+            --bs-navbar-padding-y: 2.7rem;
+        }
+        #navv{
+            @include flexb(row, flex-end, stretch);
+        }
+        #navbarN{
+            background-color: rgba(255, 255, 255, 0.696);
+            margin-top: 3rem;
+            padding: 1rem 0;
+            @include flexb(row, flex-start, flex-end);
+            .nav-link{
+                color: $mainColor;
+            }
+            .navbar-nav, .nav-link.active{
+                font-weight: bold;
+                color: $mainColor;
+            }
+        }
+        ul{
+            font-family: $textsFont;
+            font-size: 1.6rem;
+            li{
+                a{
+                    color: $mainColor;
+                    text-decoration: none;
+                    margin: 0 0.8rem;
+                }
+            }
+        }
+    }
+}
+// footer
+footer{
+    background-color: white;
+    width: auto;
+    border: $bordeHYF;
+    display: flex;
+    flex-direction: column;
+    .redes{
+        margin-top: 1.4rem;
+        margin-bottom: 1rem;
+        @include flexb(row, center, stretch);
+        a{
+            @include enlace;
+            .iconosredes{
+                font-size: 2.8rem;
+                padding: 0 0.4rem;
+            }
+        }
+    }
+    ul{
+        color: $mainColor;
+        font-size: 1.8rem;
+        list-style-type: none;
+        @include flexb(row, center, stretch);
+        margin-bottom: 0.4rem;
+        padding-left: 0;
+        li{
+            a{
+                margin-right: 0.3rem;
+                @include enlace;
+            }
+        }
+    }
+    p{
+        font-size: 1rem;
+        font-family: $textsFont;
+        @include flexb(row, center, stretch);
+    }
+}
+// general
+.titulo{
+    font-size: 7.6vh;
+    font-family: $titlesFont;
+    color: $mainColor;
+    margin-top: 0.4rem;
+    margin-left: 1.2rem;
+    font-weight: bold;
+}
+.gral{
+    background: linear-gradient(white, $mainColor);
+    @include tamaños(100%, 100%);
+}
+body, h1{
+    line-height: normal; //Esto lo hago porque sino el css de bootstrap me modifica el estilado
+    font-family: normal; //Esto lo hago porque sino el css de bootstrap me modifica el estilado
+    margin-bottom: 0;
+}

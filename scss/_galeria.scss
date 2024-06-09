@@ -1,0 +1,22 @@
+.secgaleria{
+    font-family: $textsFont;
+    font-size: 2.6rem;
+    color: white;
+    text-align: center;
+    background-color: $mainColor;
+    padding: 3.5vh 20vw;
+    margin-bottom: 1rem;
+}
+.imggaleria{
+    margin:2% 5%;
+    img{
+        @include tamaños(20vw, 26.5vh);
+        padding: 1.7vh 1vw;
+    }
+}
+.iframess{
+    iframe{
+        padding: 1vh 1vw;
+        margin: 2% 1.2%;
+    }
+}

@@ -1,0 +1,19 @@
+// variables tipográficas
+@font-face {
+    font-family: "Domine";
+    src: url(../assets/fonts/Domine-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Staatliches";
+    src: url(../assets/fonts/Staatliches-Regular.ttf);
+}
+
+$textsFont: "Domine";
+$titlesFont: "Staatliches";
+
+// variable color 
+$mainColor: #004E63;
+
+// borde header y footer
+$bordeHYF: solid 1px black;

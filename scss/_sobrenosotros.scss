@@ -1,0 +1,47 @@
+.sn1{
+    font-family: $textsFont;
+    font-size: 1.6rem;
+    color: black;
+    margin: 0.5rem 2rem 1.5rem 2rem;
+    @include flexb(row, center, flex-start);
+    p{
+        margin-bottom: 0;
+    }
+    .imgsn{
+        margin: 0 0.5rem 1rem 1rem;
+        img{
+            @include tamaños(15.65rem, 10.6rem);
+            margin: 0 0.8rem 0.8rem 0.8rem;
+        }
+    }
+    #imggrande{
+        @include tamaños(50.1rem, 33.5rem);
+    }
+}
+.nuestroequipo{
+    background-color: $mainColor;
+    h2{
+        font-family: $titlesFont;
+        font-size: 4.2rem;
+        color: white;
+        text-align: center;
+        padding-top: 2.2rem;
+    }
+    .personal{
+        padding-top: 2rem;
+        @include flexb(row, center, flex-start);
+        p{
+            font-family: $textsFont;
+            font-size: 1.4rem;
+            color: white;
+            max-width: 17.5rem;
+            padding: 1.2vh 8vw 2vh 8vw;
+            text-align: center;
+        }
+        img{
+            border-radius: 50%;
+            @include tamaños(15rem, 15rem);
+            padding: 0 9vw;
+        }
+    }
+}

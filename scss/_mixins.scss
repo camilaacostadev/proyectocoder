@@ -1,0 +1,17 @@
+// mixin display>flex
+@mixin flexb($direction, $just, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $just;
+    align-items: $align;
+}
+// mixin para definir tamaños
+@mixin tamaños($width, $height){
+    width: $width;
+    height: $height;
+}
+//mixin enlaces
+@mixin enlace{
+    color: $mainColor;
+    text-decoration: none;
+}

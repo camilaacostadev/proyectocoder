@@ -1,0 +1,47 @@
+.tipomenu{
+    @include flexb(row, space-around, stretch);
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    h2{
+        font-family: $textsFont;
+        font-size: 1.8rem;
+        text-align: center;
+        background-color: $mainColor;
+        padding: 3.5vh 20vw;
+    }
+    #bebida, #comida{
+        text-shadow: 0 0 0.5rem white;
+    }
+}
+.doblemenu{
+    @include flexb(row, space-around, stretch);
+    .menusimple{
+        max-width: 35rem;
+        background-color: white;
+        padding: 3rem 4rem;
+        border: solid 1.6rem #004E63;
+        border-radius: 10%;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        h3{
+            font-family: $textsFont;
+            font-size: 2rem;
+            padding-bottom: 1.5rem;
+            text-decoration: underline;
+        }
+        .opciones{
+            margin: 0 1.5rem 1rem 1.5rem;
+            h4{
+                font-family: $textsFont;
+                font-size: 1.4rem;
+                font-style: italic;
+            }
+            p{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

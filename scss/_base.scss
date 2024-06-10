@@ -1,44 +1,16 @@
-// Buenas Prácticas
-html{
-    font-size: 62.5%;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-}
 // header
 header{
     background-color: white;
     @include tamaños(auto, 8rem);
     border: $bordeHYF;
-    @include flexb(row, space-between, center);
+    @include flexb(row, space-between, stretch);
     a{
         img{
-            width:12.5rem;
+            width: 12.5rem;
         }
     }
     nav{
         margin-right: 1rem;
-        .navbar{
-            --bs-navbar-padding-y: 2.7rem;
-        }
-        #navv{
-            @include flexb(row, flex-end, stretch);
-        }
-        #navbarN{
-            background-color: rgba(255, 255, 255, 0.696);
-            margin-top: 3rem;
-            padding: 1rem 0;
-            @include flexb(row, flex-start, flex-end);
-            .nav-link{
-                color: $mainColor;
-            }
-            .navbar-nav, .nav-link.active{
-                font-weight: bold;
-                color: $mainColor;
-            }
-        }
         ul{
             font-family: $textsFont;
             font-size: 1.6rem;
@@ -46,12 +18,36 @@ header{
                 a{
                     color: $mainColor;
                     text-decoration: none;
-                    margin: 0 0.8rem;
+                    margin-left: 0.8rem;
+                    margin-right: 0.8rem;
                 }
             }
         }
     }
+    .navbar{
+        --bs-navbar-padding-y: 2.7rem;
+    }
+    #navv{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #navbarN{
+        background-color: rgba(255, 255, 255, 0.696);
+        margin-top: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: end;
+    }
+    .nav-link{
+        color: $mainColor;
+    }
+    .navbar-nav .nav-link.active{
+        font-weight: bold;
+        color: $mainColor;
+    }
 }
+
 // footer
 footer{
     background-color: white;

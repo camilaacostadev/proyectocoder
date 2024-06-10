@@ -1,0 +1,480 @@
+// Media Queries - Responsive Design
+@media (max-width:1180px){
+    // General
+    .titulo{
+        font-size: 7vh;
+    }
+    // Sobre Nosotros
+    .sn1{
+        @include flexb(column, flex-start, center);
+        font-size: 1.4rem;
+        p{
+            margin-bottom: 2.3rem;
+            text-align: center;
+        }
+        .imgsn{
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            img{
+                @include tamaños(28rem, 28rem);
+                margin: 0 1rem 2vh 1rem;
+            }
+        }
+        #imggrande{
+            @include tamaños(88rem, 48rem);
+            margin-bottom: 1rem;
+        }
+    }
+    .nuestroequipo{
+        .personal{
+            padding-top: 1.5rem;
+            @include flexb(row, center, flex-start);
+        }
+    }
+    // Carta
+    .doblemenu{
+        justify-content: space-evenly;
+        .menusimple{
+            max-width: 31rem;
+        }
+    }
+    // Contacto
+    .pcontact{
+        font-size: 2vh;
+        padding: 1.8vh 1vw;
+    }
+    #edad, #sexo{
+        width: 17vw;
+    }
+    #enviar{
+        width: 15vw;
+    }
+    #whatsapp, #mail, #ubicacion{
+        display: flex;
+        align-items: flex-start;
+    }
+    #fichaDeContacto p{
+        font-size: 2.4vh;
+    }
+}
+
+@media(max-width:920px){
+    // General
+    .titulo{
+        font-size: 6.5vh;
+    }
+    // Index
+    .mindex{
+        .fika{
+            font-size: 20rem;
+            padding-top: 19rem;
+            padding-bottom: 21rem;
+        }
+    }
+    // Sobre Nosotros
+    .sn1{
+        .imgsn{
+            img{
+                @include tamaños(23rem, 18rem);
+            }
+        }
+        #imggrande{
+            @include tamaños(73rem, 40rem);
+        }
+    }
+    .nuestroequipo{
+        h2{
+            font-size: 3.8rem;
+        }
+        .personal{
+            padding-top: 0.8rem;
+            p{
+                font-size: 1.4rem;
+                padding:1.5vh 1.1vw;
+                max-width: 23rem;
+            }
+            img{
+                @include tamaños(12rem, 12rem);
+                padding: 0 7vw;
+            }
+        }
+    }
+    // Carta
+    .tipomenu{
+        h2{
+            padding: 3.5vh 18vw;
+        }
+    }
+    .doblemenu {
+        .menusimple{
+            max-width: 27rem;
+            padding: 2rem 2.6rem;
+            border: solid 1.4rem $mainColor;
+            h3{
+                font-size: 1.8rem;
+                padding-bottom: 1.3rem;
+            }
+        }
+    }
+    // Galeria
+    .imggaleria{
+        img{
+            height: 20.5vh;
+        }
+    }
+    // Contacto
+    .contact{
+        @include flexb(column, flex-start, center);
+        form{
+            padding: 2vh 0;
+            #nya, #email, #edad, #sexo, #mensaje{
+                width: 60vw;
+            }
+            .edsex{
+                width: 62vw;
+                #edad, #sexo{
+                    width: 26.5vw;   
+                }
+            }
+            .form-text{
+                font-size: 1.3em;
+            }
+            #enviar{
+                width: 26vw;
+            }
+        }
+        .mapaytel{
+            width: 80rem;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 1.7vh 0 3vh 0;
+            #fichaDeContacto{
+                max-width: 36vw;
+                margin-top: 0;
+                #whatsapp, #mail, #ubicacion{
+                    .iconoscontacto{
+                        font-size: 3.7rem;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    // Footer
+    footer{
+        ul{
+            font-size: 1.7rem;
+        }
+    }
+    // General
+    .titulo{
+        font-size: 6vh;
+        margin-left: 2.8vw;
+    }
+    // Index
+    .mindex{
+        .fika{
+            font-size: 20rem;
+            margin: 0 6vw;
+        }
+    }
+    // Sobre Nosotros
+    .sn1{
+        font-size: 1.3rem;
+        .imgsn{
+            img{
+                @include tamaños(18rem, 14rem);
+                margin: 0 0.7rem 1.5vh 0.7rem;
+            }
+        }
+        #imggrande{
+            @include tamaños(57rem, 31rem);
+        }
+    }
+    .nuestroequipo{
+        .personal{
+            p{
+                font-size: 1.2rem;
+                padding:1.5vh 5vw;
+                max-width: 14rem;
+            }
+        }
+    }
+    // Carta
+    .tipomenu{
+        h2{
+            font-size: 1.8rem;
+            padding: 3.3vh 18vw;
+        }
+    }
+    .doblemenu{
+        @include flexb(column, flex-start, center);
+        .menusimple{
+            max-width: 35rem;
+            padding: 3rem 4rem;
+            border: solid 1.6rem $mainColor;
+            margin: 1rem 0;
+            h3{
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+    // Galeria
+    .secgaleria{
+        font-size: 2rem;
+        padding: 2.5vh 20vw;
+        margin-bottom: 0.8rem;
+    }
+    .iframess{
+        text-align: center;
+        iframe{
+            width: 90%;
+            margin: 2% 2%;
+        }
+    }
+    // Contacto
+    .pcontact{
+        font-size: 1.8vh;
+        padding: 1.8vh 2vw;
+    }
+    .contact{
+        .mapaytel{
+            @include flexb(column, space-between, center);
+            margin-top: 2vh;
+            height: 390px;
+            #fichaDeContacto{
+                max-width: 80vw;
+                margin-bottom: 2vh;
+                #whatsapp, #mail, #ubicacion{
+                    p{
+                        font-size: 2.2vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    // Footer
+    footer{
+        ul{
+            font-size: 1.4rem;
+        }
+    }
+    // General
+    .titulo{
+        font-size: 5vh;
+    }
+    // Index
+    .mindex{
+        .fika{
+            font-size: 17.7rem;
+        }
+    }
+    // Sobre Nosotros
+    .sn1{
+        p{
+            font-size: 1.5rem;
+        }
+        .imgsn{
+            img{
+                @include tamaños(13.5rem, 10rem);
+            }
+        }
+        #imggrande{
+            @include tamaños(44rem, 22rem);
+        }
+    }
+    .nuestroequipo{
+        h2{
+            font-size: 3.1rem;
+        }
+        .personal{
+            img{
+                @include tamaños(10rem, 10rem);
+                padding: 0 3.2rem;
+            }
+        }
+    }
+    // Carta
+    .tipomenu{
+        h2{
+            padding: 3vh 16vw;
+        }
+    }
+    .doblemenu{
+        .menusimple{
+            max-width: 30rem;
+        }
+    }
+    // Galeria
+    .secgaleria{
+        padding: 2.8vh 20vw;
+    }
+    .imggaleria{
+        img{
+            @include tamaños(40vw, 18vh);
+            padding: 1vh 2.3vw;
+        }
+    }
+    // Contacto
+    .contact{
+        .mapaytel{
+            #fichaDeContacto{
+                #whatsapp, #mail, #ubicacion{
+                    .iconoscontacto{
+                        font-size: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:480px){
+    // Footer
+    footer{
+        ul{
+            font-size: 1.2rem;
+        }
+    }
+    // General
+    .titulo{
+        font-size: 4.7vh;
+    }
+    // Fika
+    .mindex{
+        .fika{
+            font-size: 14.5rem;
+            text-shadow: 0 0 2rem white;
+        }
+    }
+    // Sobre Nosotros
+    .sn1{
+        p{
+            font-size: 1.65rem;
+        }
+        .imgsn{
+            flex-direction: column;
+            img{
+                @include tamaños(30rem, 22rem);
+                margin-bottom: 1.5rem;
+            }
+        }
+        #imggrande{
+            @include tamaños(30rem, 22rem);
+            margin-bottom: 1.5rem;
+        }
+    }
+    .nuestroequipo{
+        .personal{
+            @include flexb(column, flex-start, center);
+            p{
+                font-size: 1.6rem;
+                padding: 1.5vh 0;
+                max-width: 30rem;
+            }
+            img{
+                @include tamaños(13rem, 13rem);
+                padding: 0 8.5rem;
+            }
+        }
+    }
+    // Carta
+    .tipomenu{
+        h2{
+            font-size: 1.6rem;
+            padding: 2.2vh 13vw;
+        }
+    }
+    .doblemenu{
+        .menusimple{
+            max-width: 27rem;
+            padding: 2.5rem 2rem;
+            border: solid 1rem $mainColor;
+            h3{
+                font-size: 1.6rem;
+                padding-bottom: 0.8rem;
+            }
+            .opciones{
+                margin-bottom: 0.6rem;
+                h4{
+                    font-size: 1.4rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    // Galeria
+    .secgaleria{
+        font-size: 1.9rem;
+        padding: 2.2vh 2vw;
+    }
+    .imggaleria{
+        margin: 2% 2.5%;
+        img{
+            @include tamaños(46%, 15%);
+            padding: 0.7vh 1.5vw;
+        }
+    }
+    // Contacto
+    .pcontact{
+        font-size: 1.6vh;
+        padding-top: 1.4vh;
+        padding-bottom: 1.4vh;
+        margin-bottom: 0;
+    }
+    .contact{
+        form{
+            padding: 2vh 1vw;
+            label{
+                font-size: 1.6rem;
+                margin-bottom: 0;
+            }
+            #nya, #email, #edad, #sexo, #mensaje{
+                font-size: 1.45rem;
+                width: 72vw;
+            }
+            .edsex{
+                width: 77vw;
+                #edad, #sexo{
+                    width: 31vw;
+                }
+            }
+            .form-text{
+                font-size: 1.2rem;
+            }
+            #enviar{
+                font-size: 2.2vh;
+                @include tamaños(40vw, 4.2vh);
+            }
+        }
+        .mapaytel{
+            iframe{
+                width: 350px;
+            }
+            #fichaDeContacto{
+                max-width: 90vw;
+                padding: 1vh 2vw;
+                text-align: center;
+                #whatsapp, #mail, #ubicacion{
+                    .iconoscontacto{
+                        font-size: 5vw;
+                    }
+                    p{
+                        font-size: 2vh;
+                    }
+                }
+            }
+        }
+    }
+}

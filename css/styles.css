@@ -24,38 +24,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 header a img {
   width: 12.5rem;
 }
 header nav {
   margin-right: 1rem;
-}
-header nav .navbar {
-  --bs-navbar-padding-y: 2.7rem;
-}
-header nav #navv {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: stretch;
-}
-header nav #navbarN {
-  background-color: rgba(255, 255, 255, 0.696);
-  margin-top: 3rem;
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-header nav #navbarN .nav-link {
-  color: #004E63;
-}
-header nav #navbarN .navbar-nav, header nav #navbarN .nav-link.active {
-  font-weight: bold;
-  color: #004E63;
 }
 header nav ul {
   font-family: "Domine";
@@ -64,7 +39,30 @@ header nav ul {
 header nav ul li a {
   color: #004E63;
   text-decoration: none;
-  margin: 0 0.8rem;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+header .navbar {
+  --bs-navbar-padding-y: 2.7rem;
+}
+header #navv {
+  display: flex;
+  justify-content: flex-end;
+}
+header #navbarN {
+  background-color: rgba(255, 255, 255, 0.696);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: end;
+}
+header .nav-link {
+  color: #004E63;
+}
+header .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #004E63;
 }
 
 footer {
@@ -385,6 +383,407 @@ body, h1 {
   font-family: "Domine";
   font-size: 2.3vh;
   color: white;
+}
+
+@media (max-width: 1180px) {
+  .titulo {
+    font-size: 7vh;
+  }
+  .sn1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  .sn1 p {
+    margin-bottom: 2.3rem;
+    text-align: center;
+  }
+  .sn1 .imgsn {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .sn1 .imgsn img {
+    width: 28rem;
+    height: 28rem;
+    margin: 0 1rem 2vh 1rem;
+  }
+  .sn1 #imggrande {
+    width: 88rem;
+    height: 48rem;
+    margin-bottom: 1rem;
+  }
+  .nuestroequipo .personal {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .doblemenu {
+    justify-content: space-evenly;
+  }
+  .doblemenu .menusimple {
+    max-width: 31rem;
+  }
+  .pcontact {
+    font-size: 2vh;
+    padding: 1.8vh 1vw;
+  }
+  #edad, #sexo {
+    width: 17vw;
+  }
+  #enviar {
+    width: 15vw;
+  }
+  #whatsapp, #mail, #ubicacion {
+    display: flex;
+    align-items: flex-start;
+  }
+  #fichaDeContacto p {
+    font-size: 2.4vh;
+  }
+}
+@media (max-width: 920px) {
+  .titulo {
+    font-size: 6.5vh;
+  }
+  .mindex .fika {
+    font-size: 20rem;
+    padding-top: 19rem;
+    padding-bottom: 21rem;
+  }
+  .sn1 .imgsn img {
+    width: 23rem;
+    height: 18rem;
+  }
+  .sn1 #imggrande {
+    width: 73rem;
+    height: 40rem;
+  }
+  .nuestroequipo h2 {
+    font-size: 3.8rem;
+  }
+  .nuestroequipo .personal {
+    padding-top: 0.8rem;
+  }
+  .nuestroequipo .personal p {
+    font-size: 1.4rem;
+    padding: 1.5vh 1.1vw;
+    max-width: 23rem;
+  }
+  .nuestroequipo .personal img {
+    width: 12rem;
+    height: 12rem;
+    padding: 0 7vw;
+  }
+  .tipomenu h2 {
+    padding: 3.5vh 18vw;
+  }
+  .doblemenu .menusimple {
+    max-width: 27rem;
+    padding: 2rem 2.6rem;
+    border: solid 1.4rem #004E63;
+  }
+  .doblemenu .menusimple h3 {
+    font-size: 1.8rem;
+    padding-bottom: 1.3rem;
+  }
+  .imggaleria img {
+    height: 20.5vh;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contact form {
+    padding: 2vh 0;
+  }
+  .contact form #nya, .contact form #email, .contact form #edad, .contact form #sexo, .contact form #mensaje {
+    width: 60vw;
+  }
+  .contact form .edsex {
+    width: 62vw;
+  }
+  .contact form .edsex #edad, .contact form .edsex #sexo {
+    width: 26.5vw;
+  }
+  .contact form .form-text {
+    font-size: 1.3em;
+  }
+  .contact form #enviar {
+    width: 26vw;
+  }
+  .contact .mapaytel {
+    width: 80rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1.7vh 0 3vh 0;
+  }
+  .contact .mapaytel #fichaDeContacto {
+    max-width: 36vw;
+    margin-top: 0;
+  }
+  .contact .mapaytel #fichaDeContacto #whatsapp .iconoscontacto, .contact .mapaytel #fichaDeContacto #mail .iconoscontacto, .contact .mapaytel #fichaDeContacto #ubicacion .iconoscontacto {
+    font-size: 3.7rem;
+  }
+  .contact .mapaytel #fichaDeContacto #whatsapp p, .contact .mapaytel #fichaDeContacto #mail p, .contact .mapaytel #fichaDeContacto #ubicacion p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  footer ul {
+    font-size: 1.7rem;
+  }
+  .titulo {
+    font-size: 6vh;
+    margin-left: 2.8vw;
+  }
+  .mindex .fika {
+    font-size: 20rem;
+    margin: 0 6vw;
+  }
+  .sn1 {
+    font-size: 1.3rem;
+  }
+  .sn1 .imgsn img {
+    width: 18rem;
+    height: 14rem;
+    margin: 0 0.7rem 1.5vh 0.7rem;
+  }
+  .sn1 #imggrande {
+    width: 57rem;
+    height: 31rem;
+  }
+  .nuestroequipo .personal p {
+    font-size: 1.2rem;
+    padding: 1.5vh 5vw;
+    max-width: 14rem;
+  }
+  .tipomenu h2 {
+    font-size: 1.8rem;
+    padding: 3.3vh 18vw;
+  }
+  .doblemenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .doblemenu .menusimple {
+    max-width: 35rem;
+    padding: 3rem 4rem;
+    border: solid 1.6rem #004E63;
+    margin: 1rem 0;
+  }
+  .doblemenu .menusimple h3 {
+    padding-bottom: 1.5rem;
+  }
+  .secgaleria {
+    font-size: 2rem;
+    padding: 2.5vh 20vw;
+    margin-bottom: 0.8rem;
+  }
+  .iframess {
+    text-align: center;
+  }
+  .iframess iframe {
+    width: 90%;
+    margin: 2% 2%;
+  }
+  .pcontact {
+    font-size: 1.8vh;
+    padding: 1.8vh 2vw;
+  }
+  .contact .mapaytel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vh;
+    height: 390px;
+  }
+  .contact .mapaytel #fichaDeContacto {
+    max-width: 80vw;
+    margin-bottom: 2vh;
+  }
+  .contact .mapaytel #fichaDeContacto #whatsapp p, .contact .mapaytel #fichaDeContacto #mail p, .contact .mapaytel #fichaDeContacto #ubicacion p {
+    font-size: 2.2vh;
+  }
+}
+@media (max-width: 600px) {
+  footer ul {
+    font-size: 1.4rem;
+  }
+  .titulo {
+    font-size: 5vh;
+  }
+  .mindex .fika {
+    font-size: 17.7rem;
+  }
+  .sn1 p {
+    font-size: 1.5rem;
+  }
+  .sn1 .imgsn img {
+    width: 13.5rem;
+    height: 10rem;
+  }
+  .sn1 #imggrande {
+    width: 44rem;
+    height: 22rem;
+  }
+  .nuestroequipo h2 {
+    font-size: 3.1rem;
+  }
+  .nuestroequipo .personal img {
+    width: 10rem;
+    height: 10rem;
+    padding: 0 3.2rem;
+  }
+  .tipomenu h2 {
+    padding: 3vh 16vw;
+  }
+  .doblemenu .menusimple {
+    max-width: 30rem;
+  }
+  .secgaleria {
+    padding: 2.8vh 20vw;
+  }
+  .imggaleria img {
+    width: 40vw;
+    height: 18vh;
+    padding: 1vh 2.3vw;
+  }
+  .contact .mapaytel #fichaDeContacto #whatsapp .iconoscontacto, .contact .mapaytel #fichaDeContacto #mail .iconoscontacto, .contact .mapaytel #fichaDeContacto #ubicacion .iconoscontacto {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  footer ul {
+    font-size: 1.2rem;
+  }
+  .titulo {
+    font-size: 4.7vh;
+  }
+  .mindex .fika {
+    font-size: 14.5rem;
+    text-shadow: 0 0 2rem white;
+  }
+  .sn1 p {
+    font-size: 1.65rem;
+  }
+  .sn1 .imgsn {
+    flex-direction: column;
+  }
+  .sn1 .imgsn img {
+    width: 30rem;
+    height: 22rem;
+    margin-bottom: 1.5rem;
+  }
+  .sn1 #imggrande {
+    width: 30rem;
+    height: 22rem;
+    margin-bottom: 1.5rem;
+  }
+  .nuestroequipo .personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .nuestroequipo .personal p {
+    font-size: 1.6rem;
+    padding: 1.5vh 0;
+    max-width: 30rem;
+  }
+  .nuestroequipo .personal img {
+    width: 13rem;
+    height: 13rem;
+    padding: 0 8.5rem;
+  }
+  .tipomenu h2 {
+    font-size: 1.6rem;
+    padding: 2.2vh 13vw;
+  }
+  .doblemenu .menusimple {
+    max-width: 27rem;
+    padding: 2.5rem 2rem;
+    border: solid 1rem #004E63;
+  }
+  .doblemenu .menusimple h3 {
+    font-size: 1.6rem;
+    padding-bottom: 0.8rem;
+  }
+  .doblemenu .menusimple .opciones {
+    margin-bottom: 0.6rem;
+  }
+  .doblemenu .menusimple .opciones h4 {
+    font-size: 1.4rem;
+  }
+  .doblemenu .menusimple .opciones p {
+    font-size: 1.2rem;
+  }
+  .secgaleria {
+    font-size: 1.9rem;
+    padding: 2.2vh 2vw;
+  }
+  .imggaleria {
+    margin: 2% 2.5%;
+  }
+  .imggaleria img {
+    width: 46%;
+    height: 15%;
+    padding: 0.7vh 1.5vw;
+  }
+  .pcontact {
+    font-size: 1.6vh;
+    padding-top: 1.4vh;
+    padding-bottom: 1.4vh;
+    margin-bottom: 0;
+  }
+  .contact form {
+    padding: 2vh 1vw;
+  }
+  .contact form label {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+  .contact form #nya, .contact form #email, .contact form #edad, .contact form #sexo, .contact form #mensaje {
+    font-size: 1.45rem;
+    width: 72vw;
+  }
+  .contact form .edsex {
+    width: 77vw;
+  }
+  .contact form .edsex #edad, .contact form .edsex #sexo {
+    width: 31vw;
+  }
+  .contact form .form-text {
+    font-size: 1.2rem;
+  }
+  .contact form #enviar {
+    font-size: 2.2vh;
+    width: 40vw;
+    height: 4.2vh;
+  }
+  .contact .mapaytel iframe {
+    width: 350px;
+  }
+  .contact .mapaytel #fichaDeContacto {
+    max-width: 90vw;
+    padding: 1vh 2vw;
+    text-align: center;
+  }
+  .contact .mapaytel #fichaDeContacto #whatsapp .iconoscontacto, .contact .mapaytel #fichaDeContacto #mail .iconoscontacto, .contact .mapaytel #fichaDeContacto #ubicacion .iconoscontacto {
+    font-size: 5vw;
+  }
+  .contact .mapaytel #fichaDeContacto #whatsapp p, .contact .mapaytel #fichaDeContacto #mail p, .contact .mapaytel #fichaDeContacto #ubicacion p {
+    font-size: 2vh;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

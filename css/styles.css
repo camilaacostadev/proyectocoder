@@ -673,6 +673,9 @@ body, h1 {
     height: 18vh;
     padding: 1vh 2.3vw;
   }
+  .contact .mapaytel {
+    width: auto;
+  }
   .contact .mapaytel #fichaDeContacto #whatsapp .iconoscontacto, .contact .mapaytel #fichaDeContacto #mail .iconoscontacto, .contact .mapaytel #fichaDeContacto #ubicacion .iconoscontacto {
     font-size: 4rem;
   }

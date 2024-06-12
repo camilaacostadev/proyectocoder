@@ -193,15 +193,21 @@ body, h1 {
   justify-content: center;
   align-items: flex-start;
 }
-.nuestroequipo .personal p {
+.nuestroequipo .personal .persona {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nuestroequipo .personal .persona p {
   font-family: "Domine";
   font-size: 1.4rem;
   color: white;
-  max-width: 17.5rem;
-  padding: 1.2vh 8vw 2vh 8vw;
+  max-width: 26rem;
+  padding: 1.4vh 0;
   text-align: center;
 }
-.nuestroequipo .personal img {
+.nuestroequipo .personal .persona img {
   border-radius: 50%;
   width: 15rem;
   height: 15rem;
@@ -223,7 +229,7 @@ body, h1 {
   font-size: 1.8rem;
   text-align: center;
   background-color: #004E63;
-  padding: 3.5vh 20vw;
+  padding: 3.5vh 21vw;
 }
 .tipomenu #bebida, .tipomenu #comida {
   text-shadow: 0 0 0.5rem white;
@@ -301,6 +307,7 @@ body, h1 {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
+  padding-bottom: 1rem;
 }
 .contact form {
   padding: 4vh 0;
@@ -422,6 +429,12 @@ body, h1 {
     justify-content: center;
     align-items: flex-start;
   }
+  .nuestroequipo .personal .persona p {
+    max-width: 20rem;
+  }
+  .nuestroequipo .personal .persona img {
+    padding: 0 7vw;
+  }
   .doblemenu {
     justify-content: space-evenly;
   }
@@ -448,12 +461,12 @@ body, h1 {
 }
 @media (max-width: 920px) {
   .titulo {
-    font-size: 6.5vh;
+    font-size: 6vh;
   }
   .mindex .fika {
     font-size: 20rem;
-    padding-top: 19rem;
-    padding-bottom: 21rem;
+    padding-top: 26rem;
+    padding-bottom: 28rem;
   }
   .sn1 .imgsn img {
     width: 23rem;
@@ -469,15 +482,10 @@ body, h1 {
   .nuestroequipo .personal {
     padding-top: 0.8rem;
   }
-  .nuestroequipo .personal p {
+  .nuestroequipo .personal .persona p {
     font-size: 1.4rem;
     padding: 1.5vh 1.1vw;
     max-width: 23rem;
-  }
-  .nuestroequipo .personal img {
-    width: 12rem;
-    height: 12rem;
-    padding: 0 7vw;
   }
   .tipomenu h2 {
     padding: 3.5vh 18vw;
@@ -545,6 +553,8 @@ body, h1 {
   }
   .mindex .fika {
     font-size: 20rem;
+    padding-top: 19rem;
+    padding-bottom: 21rem;
     margin: 0 6vw;
   }
   .sn1 {
@@ -559,10 +569,15 @@ body, h1 {
     width: 57rem;
     height: 31rem;
   }
-  .nuestroequipo .personal p {
+  .nuestroequipo .personal .persona p {
     font-size: 1.2rem;
     padding: 1.5vh 5vw;
     max-width: 14rem;
+  }
+  .nuestroequipo .personal .persona img {
+    padding: 0 5vw;
+    width: 12rem;
+    height: 12rem;
   }
   .tipomenu h2 {
     font-size: 1.8rem;
@@ -639,7 +654,7 @@ body, h1 {
   .nuestroequipo h2 {
     font-size: 3.1rem;
   }
-  .nuestroequipo .personal img {
+  .nuestroequipo .personal .persona img {
     width: 10rem;
     height: 10rem;
     padding: 0 3.2rem;
@@ -666,28 +681,29 @@ body, h1 {
   footer ul {
     font-size: 1.2rem;
   }
-  .titulo {
-    font-size: 4.7vh;
-  }
   .mindex .fika {
-    font-size: 14.5rem;
-    text-shadow: 0 0 2rem white;
+    font-size: 13.8rem;
+    text-shadow: 0 0 1rem white;
   }
   .sn1 p {
-    font-size: 1.65rem;
+    font-size: 1.55rem;
   }
   .sn1 .imgsn {
     flex-direction: column;
   }
   .sn1 .imgsn img {
-    width: 30rem;
-    height: 22rem;
+    width: 28rem;
+    height: 20rem;
     margin-bottom: 1.5rem;
   }
   .sn1 #imggrande {
-    width: 30rem;
-    height: 22rem;
+    width: 28rem;
+    height: 20rem;
     margin-bottom: 1.5rem;
+  }
+  .nuestroequipo h2 {
+    font-size: 3.8rem;
+    padding-bottom: 1.5rem;
   }
   .nuestroequipo .personal {
     display: flex;
@@ -695,12 +711,13 @@ body, h1 {
     justify-content: flex-start;
     align-items: center;
   }
-  .nuestroequipo .personal p {
-    font-size: 1.6rem;
-    padding: 1.5vh 0;
+  .nuestroequipo .personal .persona p {
+    font-size: 1.55rem;
+    padding-top: 1.2rem;
+    padding-bottom: 3rem;
     max-width: 30rem;
   }
-  .nuestroequipo .personal img {
+  .nuestroequipo .personal .persona img {
     width: 13rem;
     height: 13rem;
     padding: 0 8.5rem;
@@ -710,7 +727,7 @@ body, h1 {
     padding: 2.2vh 13vw;
   }
   .doblemenu .menusimple {
-    max-width: 27rem;
+    max-width: 25.5rem;
     padding: 2.5rem 2rem;
     border: solid 1rem #004E63;
   }
@@ -740,7 +757,7 @@ body, h1 {
     padding: 0.7vh 1.5vw;
   }
   .pcontact {
-    font-size: 1.6vh;
+    font-size: 1.5rem;
     padding-top: 1.4vh;
     padding-bottom: 1.4vh;
     margin-bottom: 0;
@@ -764,14 +781,18 @@ body, h1 {
   }
   .contact form .form-text {
     font-size: 1.2rem;
+    max-width: 80%;
   }
   .contact form #enviar {
     font-size: 2.2vh;
     width: 40vw;
     height: 4.2vh;
   }
+  .contact .mapaytel {
+    justify-content: space-evenly;
+  }
   .contact .mapaytel iframe {
-    width: 350px;
+    width: 300px;
   }
   .contact .mapaytel #fichaDeContacto {
     max-width: 90vw;
@@ -779,10 +800,10 @@ body, h1 {
     text-align: center;
   }
   .contact .mapaytel #fichaDeContacto #whatsapp .iconoscontacto, .contact .mapaytel #fichaDeContacto #mail .iconoscontacto, .contact .mapaytel #fichaDeContacto #ubicacion .iconoscontacto {
-    font-size: 5vw;
+    font-size: 9vw;
   }
   .contact .mapaytel #fichaDeContacto #whatsapp p, .contact .mapaytel #fichaDeContacto #mail p, .contact .mapaytel #fichaDeContacto #ubicacion p {
-    font-size: 2vh;
+    font-size: 1.6vh;
   }
 }
 

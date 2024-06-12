@@ -30,18 +30,21 @@
     .personal{
         padding-top: 2rem;
         @include flexb(row, center, flex-start);
-        p{
+        .persona{
+            @include flexb(column, flex-start, center);
+            p{
             font-family: $textsFont;
             font-size: 1.4rem;
             color: white;
-            max-width: 17.5rem;
-            padding: 1.2vh 8vw 2vh 8vw;
+            max-width: 26rem;
+            padding: 1.4vh 0;
             text-align: center;
-        }
-        img{
-            border-radius: 50%;
-            @include tamaños(15rem, 15rem);
-            padding: 0 9vw;
+            }
+            img{
+                border-radius: 50%;
+                @include tamaños(15rem, 15rem);
+                padding: 0 9vw;
+            }
         }
     }
 }

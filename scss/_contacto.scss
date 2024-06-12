@@ -8,6 +8,7 @@
 }
 .contact{
     @include flexb(row, space-evenly, flex-start);
+    padding-bottom: 1rem;
     form{
         padding: 4vh 0;
         @include flexb(column, center, center);

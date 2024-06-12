@@ -30,6 +30,14 @@
         .personal{
             padding-top: 1.5rem;
             @include flexb(row, center, flex-start);
+            .persona{
+                p{
+                    max-width: 20rem;
+                }
+                img{
+                    padding: 0 7vw;
+                }
+            }
         }
     }
     // Carta
@@ -62,14 +70,14 @@
 @media(max-width:920px){
     // General
     .titulo{
-        font-size: 6.5vh;
+        font-size: 6vh;
     }
     // Index
     .mindex{
         .fika{
             font-size: 20rem;
-            padding-top: 19rem;
-            padding-bottom: 21rem;
+            padding-top: 26rem;
+            padding-bottom: 28rem;
         }
     }
     // Sobre Nosotros
@@ -89,14 +97,12 @@
         }
         .personal{
             padding-top: 0.8rem;
-            p{
-                font-size: 1.4rem;
-                padding:1.5vh 1.1vw;
-                max-width: 23rem;
-            }
-            img{
-                @include tamaños(12rem, 12rem);
-                padding: 0 7vw;
+            .persona{
+                p{
+                    font-size: 1.4rem;
+                    padding:1.5vh 1.1vw;
+                    max-width: 23rem;
+                }
             }
         }
     }
@@ -181,6 +187,8 @@
     .mindex{
         .fika{
             font-size: 20rem;
+            padding-top: 19rem;
+            padding-bottom: 21rem;
             margin: 0 6vw;
         }
     }
@@ -199,10 +207,16 @@
     }
     .nuestroequipo{
         .personal{
-            p{
-                font-size: 1.2rem;
-                padding:1.5vh 5vw;
-                max-width: 14rem;
+            .persona{
+                p{
+                    font-size: 1.2rem;
+                    padding:1.5vh 5vw;
+                    max-width: 14rem;
+                }
+                img{
+                    padding: 0 5vw;
+                    @include tamaños(12rem, 12rem);
+                }
             }
         }
     }
@@ -297,9 +311,11 @@
             font-size: 3.1rem;
         }
         .personal{
-            img{
-                @include tamaños(10rem, 10rem);
-                padding: 0 3.2rem;
+            .persona{
+                img{
+                    @include tamaños(10rem, 10rem);
+                    padding: 0 3.2rem;
+                }
             }
         }
     }
@@ -345,45 +361,48 @@
             font-size: 1.2rem;
         }
     }
-    // General
-    .titulo{
-        font-size: 4.7vh;
-    }
     // Fika
     .mindex{
         .fika{
-            font-size: 14.5rem;
-            text-shadow: 0 0 2rem white;
+            font-size: 13.8rem;
+            text-shadow: 0 0 1rem white;
         }
     }
     // Sobre Nosotros
     .sn1{
         p{
-            font-size: 1.65rem;
+            font-size: 1.55rem;
         }
         .imgsn{
             flex-direction: column;
             img{
-                @include tamaños(30rem, 22rem);
+                @include tamaños(28rem, 20rem);
                 margin-bottom: 1.5rem;
             }
         }
         #imggrande{
-            @include tamaños(30rem, 22rem);
+            @include tamaños(28rem, 20rem);
             margin-bottom: 1.5rem;
         }
     }
     .nuestroequipo{
+        h2{
+            font-size: 3.8rem;
+            padding-bottom: 1.5rem;
+        }
         .personal{
             @include flexb(column, flex-start, center);
-            p{
-                font-size: 1.6rem;
-                padding: 1.5vh 0;
-                max-width: 30rem;
-            }
-            img{
-                @include tamaños(13rem, 13rem);
-                padding: 0 8.5rem;
+            .persona{
+                p{
+                    font-size: 1.55rem;
+                    padding-top: 1.2rem;
+                    padding-bottom: 3rem;
+                    max-width: 30rem;
+                }
+                img{
+                    @include tamaños(13rem, 13rem);
+                    padding: 0 8.5rem;
+                }
             }
         }
     }
@@ -396,7 +415,7 @@
     }
     .doblemenu{
         .menusimple{
-            max-width: 27rem;
+            max-width: 25.5rem;
             padding: 2.5rem 2rem;
             border: solid 1rem $mainColor;
             h3{
@@ -428,7 +447,7 @@
     }
     // Contacto
     .pcontact{
-        font-size: 1.6vh;
+        font-size: 1.5rem;
         padding-top: 1.4vh;
         padding-bottom: 1.4vh;
         margin-bottom: 0;
@@ -452,6 +471,7 @@
             }
             .form-text{
                 font-size: 1.2rem;
+                max-width: 80%;
             }
             #enviar{
                 font-size: 2.2vh;
@@ -459,8 +479,9 @@
             }
         }
         .mapaytel{
+            justify-content: space-evenly;
             iframe{
-                width: 350px;
+                width: 300px;
             }
             #fichaDeContacto{
                 max-width: 90vw;
@@ -468,10 +489,10 @@
                 text-align: center;
                 #whatsapp, #mail, #ubicacion{
                     .iconoscontacto{
-                        font-size: 5vw;
+                        font-size: 9vw;
                     }
                     p{
-                        font-size: 2vh;
+                        font-size: 1.6vh;
                     }
                 }
             }
